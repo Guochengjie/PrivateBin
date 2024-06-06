@@ -52,6 +52,7 @@ endif;
 if ($MARKDOWN) :
 ?>
 		<script type="text/javascript" data-cfasync="false" src="js/showdown-2.1.0.js" integrity="sha512-WYXZgkTR0u/Y9SVIA4nTTOih0kXMEd8RRV6MLFdL6YU8ymhR528NLlYQt1nlJQbYz4EW+ZsS0fx1awhiQJme1Q==" crossorigin="anonymous"></script>
+		<script type="text/javascript" data-cfasync="false" src="js/bootstrap5mde.js" integrity="sha512-If/I/VHcjW6YFTL3JnSdvP92/pgCXfaPIQUNrne/kahTVrW38YRKKfNbXep2G0jQ4Cdv3IKPPUs01HXIExJ5Lw==" crossorigin="anonymous"></script>
 <?php
 endif;
 ?>
