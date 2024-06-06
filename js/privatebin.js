@@ -2542,6 +2542,9 @@ jQuery.PrivateBin = (function($, RawDeflate) {
         me.show = function()
         {
             $message.removeClass('hidden');
+            // show markdown area
+            var $textAreaDiv = $("#bootstrap5mde");
+            if ($textAreaDiv) $textAreaDiv.removeClass('hidden');
             $editorTabs.removeClass('hidden');
         };
 
@@ -2554,6 +2557,9 @@ jQuery.PrivateBin = (function($, RawDeflate) {
         me.hide = function()
         {
             $message.addClass('hidden');
+            // show markdown area
+            var $textAreaDiv = $("#bootstrap5mde");
+            if ($textAreaDiv) $textAreaDiv.addClass('hidden');
             $editorTabs.addClass('hidden');
         };
 
@@ -2578,6 +2584,9 @@ jQuery.PrivateBin = (function($, RawDeflate) {
         me.setText = function(newText)
         {
             $message.val(newText);
+            // change alt text
+            var $textAreaDiv = $("#bootstrap5mde-raw");
+            if ($textAreaDiv) $textAreaDiv.val(newText);
         };
 
         /**
@@ -2715,6 +2724,10 @@ jQuery.PrivateBin = (function($, RawDeflate) {
                 $plainText.addClass('hidden');
                 $prettyMessage.removeClass('hidden');
             }
+
+            // hide markdown area
+            var $textAreaDiv = $("#bootstrap5mde");
+            if ($textAreaDiv) $textAreaDiv.addClass('hidden');
         }
 
         /**
