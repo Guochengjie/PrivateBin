@@ -99,14 +99,14 @@ $(document).ready(() => {
         </div>`
 
     // copy all styles from the original textarea to the new one
-    const styles = window.getComputedStyle($textAreaOriginal[0])
-    // concatenate all styles into a string
-    let styleString = ''
-    for (let i = 0; i < styles.length; i++) {
-        styleString += `${styles[i]}: ${styles.getPropertyValue(styles[i])};`
-    }
-    // apply the styles to the new textarea
-    $(newtextAreaDiv).attr('style', styleString)
+    // const styles = window.getComputedStyle($textAreaOriginal[0])
+    // // concatenate all styles into a string
+    // let styleString = ''
+    // for (let i = 0; i < styles.length; i++) {
+    //     styleString += `${styles[i]}: ${styles.getPropertyValue(styles[i])};`
+    // }
+    // // apply the styles to the new textarea
+    // $(newtextAreaDiv).attr('style', styleString)
 
 
     // create new dom element
