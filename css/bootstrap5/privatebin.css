@@ -400,3 +400,69 @@ html[dir='rtl'] #qrcodemodalClose {
 #plaintext .cm-s-inner .cm-type {
   color: #cbcb9f;
 }
+
+#bootstrap5mde{
+	min-height: 70vh;
+	--border-color: #dddddd;
+	--svg-fill-color: #8f98a1;
+	--svg-fill-color-primary: #0d6efd;
+}
+
+#bootstrap5mde{
+	border: 1px solid var(--border-color);
+	border-radius: 0px;
+}
+
+#bootstrap5mde-btn-toolbar{
+	border-bottom: 1px solid var(--border-color);
+}
+
+#bootstrap5mde-raw{
+	padding: 12px;
+	border: none;
+	border-radius: 0px;
+	resize: none;
+}
+
+#bootstrap5mde-raw:focus{
+	outline: none !important;
+	border: none;
+}
+
+#bootstrap5mde-parsed{
+	padding: 12px;
+	border-radius: 0px;
+	flex:1;
+}
+
+.svg-fill{
+	/* Filter based on --svg-fill-color with https://codepen.io/sosuke/pen/Pjoqqp */
+	filter: invert(54%) sepia(11%) saturate(355%) hue-rotate(169deg) brightness(86%) contrast(88%);
+}
+
+.svg-fill-primary{
+	/* Filter based on --svg-fill-color with https://codepen.io/sosuke/pen/Pjoqqp */
+	filter: invert(30%) sepia(43%) saturate(5225%) hue-rotate(209deg) brightness(101%) contrast(98%);
+}
+
+.bootstrap5mde-vr{
+	border-left: 1px solid var(--svg-fill-color)
+}
+
+.bootstrap5mde-border{
+	border: 1px solid var(--border-color)
+}
+
+.px-6px{
+	padding-inline: 6px !important;
+}
+
+.shadow-hover{
+	transition: box-shadow 0.22s ease-in-out;
+}
+
+#bootstrap5mde-btn-toolbar svg{
+	width: 30px;
+	height: 30px;
+	color: var(--svg-fill-color);
+}

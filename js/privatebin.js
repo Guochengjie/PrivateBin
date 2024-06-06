@@ -2440,6 +2440,10 @@ jQuery.PrivateBin = (function($, RawDeflate) {
             $messageEdit.attr('aria-selected','true');
             $messagePreview.attr('aria-selected','false');
 
+            // show markdown area
+            var $textAreaDiv = $("#bootstrap5mde");
+            if ($textAreaDiv) $textAreaDiv.removeClass('hidden');
+
             PasteViewer.hide();
 
             // reshow input
@@ -2476,6 +2480,10 @@ jQuery.PrivateBin = (function($, RawDeflate) {
 
             // hide input as now preview is shown
             $message.addClass('hidden');
+
+            // hide markdown area
+            var $textAreaDiv = $("#bootstrap5mde");
+            if ($textAreaDiv) $textAreaDiv.addClass('hidden');
 
             // show preview
             PasteViewer.setText($message.val());
@@ -3768,7 +3776,7 @@ jQuery.PrivateBin = (function($, RawDeflate) {
 
         /**
          * Clear the password input in the top navigation
-         * 
+         *
          * @name TopNav.clearPasswordInput
          * @function
          */

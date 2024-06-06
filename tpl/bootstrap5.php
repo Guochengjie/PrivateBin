@@ -52,13 +52,13 @@ endif;
 if ($MARKDOWN) :
 ?>
 		<script type="text/javascript" data-cfasync="false" src="js/showdown-2.1.0.js" integrity="sha512-WYXZgkTR0u/Y9SVIA4nTTOih0kXMEd8RRV6MLFdL6YU8ymhR528NLlYQt1nlJQbYz4EW+ZsS0fx1awhiQJme1Q==" crossorigin="anonymous"></script>
-		<script type="text/javascript" data-cfasync="false" src="js/bootstrap5mde.js" integrity="sha512-ZVrSHyyBSsFbftP+h7gCObtkcrMvGDgRRqNoOOHel0cqgcPT0cHOyJ5o6gQLnClkcUZm21+GRl5HKnMZ7WG9xg==" crossorigin="anonymous"></script>
+		<script type="text/javascript" data-cfasync="false" src="js/bootstrap5mde.js" integrity="sha512-wBuc1tcW2kckYl96oowwmqtA88kc0r++CEv8DtsGu44e/nvvzSsVpMdr/CNJp8DRCXbVebXDDz9FVpByu8v+pQ==" crossorigin="anonymous"></script>
 <?php
 endif;
 ?>
 		<script type="text/javascript" data-cfasync="false" src="js/purify-3.1.3.js" integrity="sha512-t/FKG/ucQVMWTWVouSMABSEx1r+uSyAI9eNDq0KEr9mPhkgxpJztHI/E72JIpv/+VwPs/Q4husxj14TE9Ps/wg==" crossorigin="anonymous"></script>
 		<script type="text/javascript" data-cfasync="false" src="js/legacy.js?<?php echo rawurlencode($VERSION); ?>" integrity="sha512-LYos+qXHIRqFf5ZPNphvtTB0cgzHUizu2wwcOwcwz/VIpRv9lpcBgPYz4uq6jx0INwCAj6Fbnl5HoKiLufS2jg==" crossorigin="anonymous"></script>
-		<script type="text/javascript" data-cfasync="false" src="js/privatebin.js?<?php echo rawurlencode($VERSION); ?>" integrity="sha512-cbmXvtZ/5gZPFjQDzP3IEhUAIhFPAoM31gw2kRYCT5xOh8wv9gXeDqI/t798luRW1xdC4gaYodjEFCzrsZR4mA==" crossorigin="anonymous"></script>
+		<script type="text/javascript" data-cfasync="false" src="js/privatebin.js?<?php echo rawurlencode($VERSION); ?>" integrity="sha512-RxXWSQnMvBDVz8auIrtCOh5qQm5M4OXRcIeR/eLzgXly+m4r06IoqEx2jmjR7ZvCxEIb/z168rZmU71kmzga1w==" crossorigin="anonymous"></script>
 		<!-- icon -->
 		<link rel="apple-touch-icon" href="<?php echo I18n::encode($BASEPATH); ?>img/apple-touch-icon.png" sizes="180x180" />
 		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />

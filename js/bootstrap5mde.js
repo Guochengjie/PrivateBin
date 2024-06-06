@@ -2,7 +2,7 @@
 
 $(document).ready(() => {
     // Hide the original textarea then create a new one with the same content
-    var $textAreaOriginal = $('#content')
+    var $textAreaOriginal = $("textarea#message")
     $textAreaOriginal.hide()
 
     // this is the new Div
@@ -30,7 +30,7 @@ $(document).ready(() => {
                             <path d="M5.313 3.136h-1.23V9.54c0 2.105 1.47 3.623 3.917 3.623s3.917-1.518 3.917-3.623V3.136h-1.23v6.323c0 1.49-.978 2.57-2.687 2.57s-2.687-1.08-2.687-2.57zM12.5 15h-9v-1h9z"/>
                         </svg>
                     </button>
-                    
+
                 </div>
 
                 <div class="vr bootstrap5mde-vr mx-2 my-2"></div>
@@ -233,7 +233,6 @@ $(document).ready(() => {
     $textAreaAlt.on('input', () => {
         $textAreaOriginal.val($textAreaAlt.val())
     })
-
 })
 
 
@@ -271,7 +270,7 @@ function addTextAtCursor(textArea, text, offset = 0, addLineStart = false) {
     $(textArea).val(textBefore + textAfter)
     $(textArea).focus()
 
-    var $textAreaOriginal = $('#content')
+    var $textAreaOriginal = $("textarea#message")
     $textAreaOriginal.val(textBefore + textAfter)
 
     if (offset != 0) {
@@ -315,7 +314,7 @@ function addTextSurroundingCursor(textArea, textLeft, textRight = null) {
 
     // Replace text from textarea
     const newVal = `${textBeforeStart}${textLeft}${highlightedText}${textRight}${textAfterEnd}`
-    var $textAreaOriginal = $('#content')
+    var $textAreaOriginal = $("textarea#message")
     $textAreaOriginal.val(newVal)
     $(textArea).val(newVal)
     $(textArea).focus()
